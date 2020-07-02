@@ -1,0 +1,36 @@
+Lista dwukierunkowa - sortowanie b¹belkowe
+Do: poniedzia³ek, 15 maj 2017, 15:15 
+Maksymalna liczba plików: 5
+Type of work: Individual work
+Zaimplementowaæ listê dwukierunkow¹ przechowuj¹c¹ zmienne typu ca³kowitego.
+
+Lista powinna sk³adaæ siê z dwóch klas:
+
+Klasa lista:
+  -jedno pole prywatne przechowuj¹ce wskaŸnik na pierwszy element listy
+  -funkcja przyjmuj¹ca jako argument liczbê ca³kowit¹ i dodaj¹ca j¹ na koniec listy
+  -funkcja wyœwietlaj¹c¹ listê od pierwszego elementu do ostatniego
+  -funkcjê sortuj¹c¹ listê rosn¹co za pomoc¹ sortowania b¹belkowego.
+         Sortowanie ma siê odbyæ poprzez odpowiedni¹ zamianê wskaŸników. 
+         Wartoœci ustawione w elementach nie mog¹ siê zmieniæ.
+
+Klasa element:
+  -dwa prywatne wskaŸniki na poprzedni oraz nastêpny element (poprzedni pierwszego elementu oraz nastêpny ostatniego elementu s¹ równe nullptr)
+  -pole prywatne przechowuj¹ce zmienn¹ typu ca³kowitego
+  -publiczn¹ funkcjê zwracaj¹c¹ przechowywan¹ liczbê
+
+Aby klasa lista mia³a dostêp do wskaŸników klasy element nale¿y u¿yæ odpowiedniego zaprzyjaŸnienia.
+
+Proszê pamiêtaæ o odpowiednich destruktorach.
+
+
+W funkcji main nale¿y pobraæ od u¿ytkownika z ilu elementów bêdzie sk³adaæ siê lista, pobraæ tyle elementów i wrzuciæ do listy. Nastêpnie nale¿y wyœwietliæ listê, posortowaæ j¹ oraz ponownie wyœwietliæ.
+
+Zadanie nale¿y wykonaæ do koñca zajêæ.
+
+Przyk³ad 1:
+> 5
+> 8 2 7 4 23
+
+< 8 2 7 4 23
+< 2 4 7 8 23

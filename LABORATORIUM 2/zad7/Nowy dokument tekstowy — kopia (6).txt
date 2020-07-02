@@ -1,0 +1,45 @@
+Dziedziczenie klas II
+Do: poniedzia³ek, 17 kwiecieñ 2017, 07:40 
+Maksymalna liczba plików: 7
+Type of work: Individual work
+Zaprojektowaæ oraz zaimplementowaæ trzy klasy:
+
+Klasa abstrakcyjna Figura zawieraj¹ca:
+  -funkcjê abstrakcyjn¹ zwracaj¹c¹ wartoœæ pola
+
+Klasa Kwadrat, dziedzicz¹ca po klasie Figura, zawieraj¹ca:
+  -zmienn¹ przechowuj¹c¹ d³ugoœæ boku
+  -konstruktor przyjmuj¹cy jako argument d³ugoœæ boku
+
+Klasa Trójk¹t, dziedzicz¹ca po klasie Figura, zawieraj¹ca:
+  -zmienne przechowuj¹ce d³ugoœæ boku oraz wysokoœæ
+  -konstruktor przyjmuj¹cy jako argument d³ugoœæ boku i wysokoœæ
+
+Klasa Kwadrat oraz Trójk¹t musz¹ zawieraæ implementacjê funkcji zwracaj¹cej pole.
+
+Wszystkie konstruktory oraz destruktory maj¹ dodatkowo wyœwietlaæ nazwê typu jaki jest tworzony/usuwany, tj.
+klasa Kwadrat w konstruktorze wyœwietla "Utworzono Kwadrat", a w destruktorze "Usuniêto kwadrat".
+
+Ka¿da klasa powinna mieæ dwa pliki: nag³ówkowy(.h) oraz Ÿród³owy(.cpp)
+
+Nastêpnie w funkcji main nale¿y utworzyæ dwa wskaŸniki do klasy bazowej. Do pierwszego wskaŸnika przypisaæ obiekt typu kwadrat natomiast do drugiego trójk¹t. Dane s¹ pobierane od u¿ytkownika.
+
+Na koniec proszê zmieniæ typ destruktorów na wirtualne i zaobserwowaæ jak zmieni siê ich wywo³anie.
+
+Proszê pamiêtaæ o odpowiednim usuniêciu obiektów.
+
+Przyk³ad:
+> 4
+< Utworzono ...
+< Utworzono ...
+< Pole wynosi: 16
+> 2 4
+< Utworzono ...
+< Utworzono ...
+< Pole wynosi: 4
+< Usuniêto ...
+< Usuniêto ...
+< Usuniêto ...
+< Usuniêto ...
+
+W miejscu ... powinien byæ wyœwietlony odpowiedni typ (Figura, Kwadrat, Trójk¹t).

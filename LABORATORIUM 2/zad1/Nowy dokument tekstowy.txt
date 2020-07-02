@@ -1,0 +1,23 @@
+Do: niedziela, 12 marzec 2017, 11:50 
+Maksymalna liczba plików: 1
+Type of work: Individual work
+Napisaæ program, który bêdzie znajdowa³ miejsce zerowe funkcji:
+ax3+bx2+cx+d
+
+w przedziale [min;max] z dok³adnoœci¹ delta.
+Dok³adnoœæ delta oznacza, ¿e przedzia³ przeszukiwañ w danej iteracji jest mniejszy ni¿ delta.
+
+Jako wejœcie program przyjmuje wspó³czynniki a,b,c,d oraz wartoœci min, max oraz delta.
+Jeœli program nie bêdzie móg³ znaleŸæ miejsca zerowego po 1000 iteracjach lub miejsca zerowego nie ma w podanym przedziale nale¿y wyœwietliæ: 'nie znaleziono'
+
+Przyk³ad:
+
+
+Podaj wspolczynniki wielomianu:
+1 3 12 8
+Podaj przedzia³ przeszukiwania:
+-5 5
+Podaj dokladnosc:
+0.0001
+Wynik:
+-0.7790

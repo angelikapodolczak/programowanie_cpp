@@ -1,0 +1,41 @@
+Dziedziczenie klas
+Do: pi¹tek, 7 kwiecieñ 2017, 17:40 
+Maksymalna liczba plików: 7
+Type of work: Individual work
+Zaprojektowaæ oraz zaimplementowaæ trzy klasy:
+
+Klasa Figura zawieraj¹ca:
+  -zmienn¹ chronion¹ 'pole' typu double,
+  -konstruktor przyjmuj¹cy jeden argument oraz ustawiaj¹cy wartoœæ zmiennej 'pole',
+  -funkcjê publiczn¹ zwracaj¹c¹ wartoœæ zmiennej 'pole',
+
+Klasa Kwadrat, dziedzicz¹ca po klasie Figura, zawieraj¹ca konstruktor przyjmuj¹cy jako argument d³ugoœæ boku oraz wyliczaj¹cy pole.
+
+Klasa Trójk¹t, dziedzicz¹ca po klasie Figura, zawieraj¹ca konstruktor przyjmuj¹cy jako argument d³ugoœæ boku i wysokoœæ oraz wyliczaj¹cy pole.
+
+Klasa Kwadrat oraz Trójk¹t nie wprowadzaj¹ ¿adnych dodatkowych zmiennych oraz funkcji (poza konstruktorami).
+
+Wszystkie konstruktory oraz destruktory maj¹ dodatkowo wyœwietlaæ nazwê typu jaki jest tworzony/usuwany, tj.
+klasa Kwadrat w konstruktorze wyœwietla "Utworzono Kwadrat", a w destruktorze "Usuniêto kwadrat".
+
+Typ dziedziczenia dobraæ tak, aby zmienna 'pole' by³a dostêpna tylko w klasach dziedzicz¹cych natomiast funkcja zwracaj¹ca 'pole' powinna byæ dostêpna równie¿ poza klasami dziedzicz¹cymi.
+
+Ka¿da klasa powinna mieæ dwa pliki: nag³ówkowy(.h) oraz Ÿród³owy(.cpp)
+
+Nastêpnie w funkcji main nale¿y pobraæ od u¿ytkownika d³ugoœæ boku kwadratu, utworzyæ obiekt typu Kwadrat oraz wyœwietliæ jego pole. Operacje nale¿y powtórzyæ dla trójk¹ta.
+
+Przyk³ad:
+> 4
+< Utworzono ...
+< Utworzono ...
+< Pole wynosi: 16
+> 2 4
+< Utworzono ...
+< Utworzono ...
+< Pole wynosi: 4
+< Usuniêto ...
+< Usuniêto ...
+< Usuniêto ...
+< Usuniêto ...
+
+W miejscu ... powinien byæ wyœwietlony odpowiedni typ (Figura, Kwadrat, Trójk¹t).

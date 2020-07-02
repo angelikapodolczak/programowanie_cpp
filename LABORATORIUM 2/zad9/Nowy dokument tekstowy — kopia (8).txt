@@ -1,0 +1,46 @@
+Lista dwukierunkowa
+Do: wtorek, 2 maj 2017, 08:35 
+Maksymalna liczba plików: 5
+Type of work: Individual work
+Zaimplementowaæ listê dwukierunkow¹ przechowuj¹c¹ zmienne typu ca³kowitego.
+
+Lista powinna sk³adaæ siê z dwóch klas:
+
+Klasa lista:
+  -jedno pole prywatne przechowuj¹ce wskaŸnik na pierwszy element listy
+  -funkcja przyjmuj¹ca jako argument liczbê ca³kowit¹ i dodaj¹ca j¹ na koniec listy
+  -funkcja znajduj¹ca liczbê w liœcie i zwracaj¹ca 'true' jeœli element istnieje, 'false' w przeciwnym przypadku
+        Dodatkowo funkcja ta powinna wyœwietlaæ miedzy jakimi liczbami znajduje siê szukany element.
+        Jeœli w liœcie znajduj¹ siê dwa identyczne elementy nale¿y znaleŸæ element znajduj¹cy siê bli¿ej pocz¹tku listy.
+
+Klasa element:
+  -dwa prywatne wskaŸniki na poprzedni oraz nastêpny element (poprzedni pierwszego elementu oraz nastêpny ostatniego elementu s¹ równe nullptr)
+  -pole prywatne przechowuj¹ce zmienn¹ typu ca³kowitego
+  -publiczn¹ funkcjê zwracaj¹c¹ przechowywan¹ liczbê
+
+Aby klasa lista mia³a dostêp do wskaŸników klasy element nale¿y u¿yæ odpowiedniego zaprzyjaŸnienia.
+
+Proszê pamiêtaæ o odpowiednich destruktorach.
+
+
+W funkcji main nale¿y pobraæ od u¿ytkownika z ilu elementów bêdzie sk³adaæ siê lista, pobraæ tyle elementów i wrzuciæ do listy. Nastêpnie nale¿y pobraæ od u¿ytkownika szukan¹ wartoœæ i wyœwietliæ czy ta liczba znajduje siê w liœcie. 
+
+Przyk³ad 1:
+> 5
+> 8 2 7 4 23
+> 2
+< element znajduje siê za 8 i przed 7
+< znaleziono
+
+Przyk³ad 2:
+> 5
+> 8 2 7 4 23
+> 28
+< nie znaleziono
+
+Przyk³ad 3:
+> 5
+> 8 2 7 4 23
+> 23
+< element znajduje siê za 4
+< znaleziono

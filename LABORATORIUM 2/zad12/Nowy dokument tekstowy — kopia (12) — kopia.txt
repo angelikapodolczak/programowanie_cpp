@@ -1,0 +1,46 @@
+Drzewo binarne
+Do: poniedzia³ek, 5 czerwiec 2017, 09:45 
+Maksymalna liczba plików: 5
+Type of work: Individual work
+Zaimplementowaæ drzewo binarne.
+
+Drzewo powinno sk³adaæ siê z dwóch klas:
+
+Klasa drzewo:
+  -jedno pole prywatne przechowuj¹ce wskaŸnik na korzeñ drzewa
+  -funkcja publiczna dodaj¹ca element do drzewa
+           - funkcja przyjmuje jako argument liczbê ca³kowit¹,
+           - elementy zawsze dodawane s¹ na koñcu drzewa (jako liœcie),
+           - wiêksze elementy po lewej, mniejsze po prawej,
+  -funkcja publiczna znajduj¹ca element
+           - funkcja przyjmuje jako argument liczbê ca³kowit¹,
+           - funkcja zwraca numer poziomu na którym znajduje siê element jeœli element zosta³ znaleziony, -1 w przeciwnym przypadku(0 oznacza poziom korzenia drzewa).
+
+Klasa element:
+  -dwa prywatne wskaŸniki na lewy i prawy nastêpnik
+  -pole prywatne przechowuj¹ce zmienn¹ typu ca³kowitego
+  -publiczn¹ funkcjê zwracaj¹c¹ przechowywan¹ liczbê
+  - dwie publiczne funkcje zwracaj¹ce wskaŸniki na lewy i prawy nastêpnik.
+  - dwie publiczne funkcje ustawiaj¹ce wskaŸniki na lewy i prawy nastêpnik.
+
+Proszê pamiêtaæ o odpowiednich destruktorach.
+
+
+W funkcji main nale¿y pobraæ od u¿ytkownika liczbê elementów, a nastêpnie pobraæ te elementy i wstawiæ do drzewa.
+W kolejnym kroku nale¿y pobraæ element szukany i wyœwietliæ:
+        -'znaleziono na poziomie x' jeœli element znajduje siê w drzewie(gdzie x jest poziomem na którym znaleziono element) 
+        -'nie znaleziono' w przeciwnym przypadku
+
+Zadanie nale¿y wykonaæ do koñca tygodnia.
+
+Przyk³ad 1:
+<< 5
+<< 7 5 4 6 9
+<< 9
+>> 'znaleziono na poziomie 1'
+
+Przyk³ad 2:
+<< 4
+<< 4 5 2 6
+<< 9
+>> 'nie znaleziono'

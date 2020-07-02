@@ -1,0 +1,69 @@
+Lista dwukierunkowa - iterator
+Do: czwartek, 1 czerwiec 2017, 00:00 
+Maksymalna liczba plików: 7
+Type of work: Individual work
+Zaimplementowaæ listê dwukierunkow¹ przechowuj¹c¹ zmienne typu ca³kowitego oraz iterator do niej.
+
+Lista powinna sk³adaæ siê z dwóch klas:
+
+Klasa lista:
+  -jedno pole prywatne przechowuj¹ce wskaŸnik na pierwszy element listy
+  -funkcja przyjmuj¹ca jako argument liczbê ca³kowit¹ i dodaj¹ca j¹ na koniec listy
+  -funkcja wyœwietlaj¹c¹ listê od pierwszego elementu do ostatniego
+
+Klasa element:
+  -dwa prywatne wskaŸniki na poprzedni oraz nastêpny element (poprzedni pierwszego elementu oraz nastêpny ostatniego elementu s¹ równe nullptr)
+  -pole prywatne przechowuj¹ce zmienn¹ typu ca³kowitego
+  -publiczn¹ funkcjê zwracaj¹c¹ przechowywan¹ liczbê
+
+Klasa iterator powinna sk³adaæ siê z:
+  -konstruktora
+        konstruktor jako argument powinien przyjmowaæ wskaŸnik/referencjê na listê 
+        oraz powinien ustawiaæ aktualny element iteratora na pierwszy element listy 
+  -prywatnego wskaŸnika na aktualny element
+  -prywatnego wskaŸnika/referencji na listê
+  -funkcji przesuwaj¹cej iterator
+        funkcja przyjmuje jako argument liczbê ca³kowit¹
+        jeœli argument jest dodatni iterator przesuwa aktualny wskaŸnik w kierunku koñca listy
+        jeœli argument jest ujemny w kierunku pocz¹tku
+        jeœli przesuniêcie powoduje wyjœcie poza listê 
+            iterator powinien siê zatrzymaæ na pierwszym (lub ostatnim) elemencie
+  -funkcji zwracaj¹cej wartoœæ aktualnego elementu 
+
+Aby klasa lista oraz iterator mia³y dostêp do wskaŸników klasy element nale¿y u¿yæ odpowiedniego zaprzyjaŸnienia.
+Aby klasa iterator mia³a dostêp do elementu listy nale¿y u¿yæ odpowiedniego zaprzyjaŸnienia.
+ 
+
+Proszê pamiêtaæ o odpowiednich destruktorach.
+
+W funkcji main nale¿y wykonaæ nastêpuj¹ce operacje:
+1. Pobraæ od u¿ytkownika z ilu elementów bêdzie sk³adaæ siê lista
+2. Pobraæ elementy i wrzuciæ do listy
+3. Wyœwietliæ listê
+4. Utworzyæ iterator
+5. Wyœwietliæ aktualny element iteratora 
+5. Pobraæ od u¿ytkownika liczbê przesuniêæ
+6. Pobraæ przesuniêcie
+7. Przestawiæ iterator i wyœwietliæ element
+         Operacje 5-7 powtarzaæ a¿ bêdzie wykonana pobrana liczba przesuniêæ
+8. Wyœwietliæ ponownie listê
+
+
+Przyk³ad:
+>> 5
+>> 8 2 7 4 23
+<< 8 2 7 4 23
+<< 8
+>> 3
+>> 1
+<< 2
+>> 10
+<< 23
+>> -3
+<< 2
+
+Zadanie dodatkowe:
+Dodaæ do klasy iterator funkcjê usuwaj¹c¹ element na który aktualnie wskazuje iterator.
+Po ka¿dym usuniêciu iterator powinien wskazywaæ na element nastêpny do usuniêtego.
+W przypadku ostatniego elementu iterator powinien wskazywaæ na element, który bêdzie ostatni po operacji usuwania.
+W funkcji main nale¿y nastêpnie usun¹æ ka¿dy element, który zosta³ wyœwietlony.

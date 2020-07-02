@@ -1,0 +1,37 @@
+Przeci¹¿anie operatorów
+Do: pi¹tek, 7 kwiecieñ 2017, 21:05 
+Maksymalna liczba plików: 3
+Type of work: Individual work
+Zaprojektowaæ oraz zaimplementowaæ klasê reprezentuj¹c¹ datê.
+
+Klasa powinna zawieraæ nastêpuj¹ce elementy:
+
+ - trzy prywatne elementy typu ca³kowitego reprezentuj¹ce dzieñ, miesi¹c oraz rok
+ - jeden konstruktor:
+                      Date(int day, int month, int year) 
+   Konstruktor powinien sprawdzaæ czy dane wejœciowe s¹ odpowiednie (miesi¹c nie mo¿e byæ wiêkszy ni¿ 12 i mniejszy ni¿ 1, itp).
+   Jeœli walidacja siê nie uda wszystkie dane powinny byæ wyzerowane.
+
+ - operator + w dwóch wersjach
+              - dodawanie liczby ca³kowitej (1/1/2000 + 40 = 9/2/2000)
+              - dodawanie innej daty (1/1/2000 + 1/1/1 = 2/2/2001)
+
+ - operator += w takich samych dwóch wersjach
+ - operator <<  zwracaj¹cy stream w formacie "DD/MM/YY"
+ - destruktor wyœwietlaj¹cy:
+           "Usunieto"
+
+W funkcji main nale¿y wykorzystaæ wszystkie operatory dodawania z danymi otrzymanymi od u¿ytkownika, po ka¿dej zmianie wyœwietlaj¹c datê operatorem <<. To znaczy:
+
+1. U¿ytkownik podaje 1 1 2000 
+2. Program wyœwietla 1/1/2000
+3. U¿ytkownik podaje 10
+4. (operator+) Program wyœwietla 11/1/2000
+5. U¿ytkownik podaje 1 1 1
+6. (operator+) Program wyœwietla 12/2/2001
+7. U¿ytkownik podaje 10
+8. (operator+=) Program wyœwietla 22/2/2001
+9. U¿ytkownik podaje 1 1 1
+10. (operator+=) Program wyœwietla 23/3/2002
+
+Typy danych wejœciowych zawsze bêd¹ w takiej kolejnoœci.

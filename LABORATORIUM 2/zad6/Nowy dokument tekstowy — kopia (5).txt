@@ -1,0 +1,24 @@
+Operatory new oraz delete
+Do: niedziela, 9 kwiecieñ 2017, 11:55 
+Maksymalna liczba plików: 1
+Type of work: Individual work
+Celem zadania jest zaimplementowanie tablicy dwuwymiarowej przechowuj¹cej elementy typu int, której ka¿dy wiersz jest innego rozmiaru.
+
+Na pocz¹tku u¿ytkownik podaje liczbê wierszy, a nastêpnie rozmiar ka¿dego z wierszy.
+Wartoœæ ka¿dego elementu nale¿y ustawiæ na rozmiar wiersza w którym dany element siê znajduje, a nastêpnie wyœwietliæ tablicê(ka¿dy wiersz w oddzielnej linii).
+
+Na koniec nale¿y usun¹æ tablicê wykorzystuj¹c odpowiednio 'delete'.
+
+Przyk³ad:
+
+> 4
+> 2
+> 1 
+> 5
+> 3
+
+
+< 22
+< 1
+< 55555
+< 333

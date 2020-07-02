@@ -1,0 +1,31 @@
+Podstawowe elementy klas
+Do: niedziela, 26 marzec 2017, 09:45 
+Maksymalna liczba plików: 3
+Type of work: Individual work
+Zaprojektowaæ oraz zaimplementowaæ klasê reprezentuj¹c¹ datê.
+
+Klasa powinna zawieraæ nastêpuj¹ce elementy:
+
+ - trzy prywatne elementy typu ca³kowitego reprezentuj¹ce dzieñ, miesi¹c oraz rok
+ - dwa konstruktory:
+                      Date(int day, int month, int year) 
+                      Date(int day, string month, int year)
+   Konstruktory powinny sprawdzaæ czy dane wejœciowe s¹ odpowiednie (miesi¹c nie mo¿e byæ wiêkszy ni¿ 12 i mniejszy ni¿ 1, itp).
+   Jeœli walidacja siê nie uda wszystkie dane powinny byæ wyzerowane.
+
+ - funkcjê wyliczaj¹c¹ dzieñ tygodnia i zwracaj¹c¹ wynik jako string: odpowiednio "poniedzialek", "wtorek", ...
+ - funkcjê wyœwietlaj¹c¹ datê w formacie "dzien_tygodnia DD/MM/YY"
+ - destruktor wyœwietlaj¹cy:
+           "Usunieto"
+
+Nastêpnie w funkcji main u¿ytkownik wprowadza dwie daty: w pierwszym przypadku bêd¹ trzy liczby, natomiast w drugim miesi¹c bêdzie podany s³ownie. Daty nale¿y wyœwietliæ za pomoc¹ napisanej funkcji. 
+
+Przyk³ad:
+22 3 2017
+sroda 22/03/17
+23 marzec 2017
+czwartek 23/03/17
+Usunieto
+Usunieto
+
+VPL 3.2

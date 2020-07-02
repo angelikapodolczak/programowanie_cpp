@@ -1,0 +1,24 @@
+Do: niedziela, 26 marzec 2017, 20:30 
+Maksymalna liczba plików: 1
+Type of work: Individual work
+Napisaæ program, który bêdzie oblicza³ pierwiastek z liczby x za pomoc¹ metody Newtona-Raphsona z dok³adnoœci¹ delta. Jako wartoœæ pocz¹tkow¹ nale¿y u¿yæ liczby x/2.
+Nastêpnie porównaæ wynik z funkcj¹ sqrt() z biblioteki <cmath> i wyznaczyæ po ilu iteracjach dok³adnoœæ zosta³a osi¹gniêta.
+Delta oznacza na ilu miejscach otrzymany wynik jest identyczny z funkcj¹ sqrt()
+
+Wejœcie programu:
+x, delta
+
+wyœcie programu:
+pierwiastek z x
+liczba wykonanych iteracji.
+
+Przyk³ad:
+
+Podaj x:
+42
+Podaj dokladnosc:
+7
+Pierwiastek wynosi:
+6.480740716...
+Liczba iteracji:
+5

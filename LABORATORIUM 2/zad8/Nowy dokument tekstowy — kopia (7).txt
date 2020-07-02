@@ -1,0 +1,25 @@
+Kontenery
+Do: pi¹tek, 14 kwiecieñ 2017, 09:35 
+Maksymalna liczba plików: 3
+Type of work: Individual work
+Zaprojektowaæ oraz zaimplementowaæ klasê przechowuj¹c¹ zmienne typu integer.
+
+Klasa ma zawieraæ trzy prywatne zmienne:
+  -tablicê przechowuj¹c¹ liczby ca³kowite, alokowan¹ dynamicznie ( za pomoc¹ polecenia 'new' )
+  -zmienn¹ 'start' oznaczaj¹c¹ indeks pierwszego elementu
+  -zmienn¹ 'koniec' maj¹c¹ wartoœæ o jeden wiêksz¹ od indeksu ostatniego elementu
+Zmienne 'start' i 'koniec' tworz¹ przedzia³ indeksów zamkniêto-otwarty (tj. dla wartoœci -2 i 1 zmienne s¹ przechowywane pod indeksami -2 -1 0 ).
+
+Klasa ma zawieraæ jeden konstruktor dwuargumentowy ustawiaj¹cy zmienn¹ 'start' oraz 'koniec'. Dodatkowo w konstruktorze nale¿y zainicjalizowaæ tablicê o odpowiednim rozmiarze oraz wype³niæ j¹ zerami. Jeœli zmienna start bêdzie wiêksza od zmiennej koniec nale¿y zamieniæ je miejscami.
+
+Klasa ma zawieraæ dwie funkcje zwracaj¹ce 'start' i 'koniec' oraz przeci¹¿ony operator[].
+
+Nastêpnie w funkcji main nale¿y pobraæ od u¿ytkownika dwie zmienne i utworzyæ obiekt nowej klasy, a nastêpnie w pêtli 'for' pobieraæ kolejne elementy i wstawiaæ je za pomoc¹ operatora []. Na koniec nale¿y wyœwietliæ wszystkie elementy wraz z ich indeksami (ka¿dy w nowej linii, równie¿ za pomoc¹ operatora[]).
+
+Przyk³ad:
+> -3 1
+> 5 1 2 -4
+< -3 : 5
+< -2 : 1
+< -1 : 2
+<  0 : -4
